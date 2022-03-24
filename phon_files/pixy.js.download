@@ -1,0 +1,111 @@
+//1.8.0
+function _pxS4() {
+    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+}
+function _pxRID() {
+    return (_pxS4() + _pxS4() + "-" + _pxS4() + "-" + _pxS4() + "-" + _pxS4() + "-" + _pxS4() + _pxS4() + _pxS4());
+}
+function _pxNow() {
+    var now = new Date();
+    var today = now.getFullYear() + "-" + (((now.getMonth() + 1) < 10) ? "0" : "") + (now.getMonth() + 1) + "-" + ((now.getDate() < 10) ? "0" : "") + now.getDate();
+    var timeNow = ((now.getHours() < 10) ? "0" : "") + now.getHours() + ":" + ((now.getMinutes() < 10) ? "0" : "") + now.getMinutes() + ":" + ((now.getSeconds() < 10) ? "0" : "") + now.getSeconds();
+    return today + " " + timeNow;
+}
+
+var _pxC = "111";
+var _pxH = "";
+var _pxV = "";
+var _pxURL = "";
+var _pxCID = "";
+var _pxO = "";
+var _pxYPID = "";
+var _pxLID = "";
+var _pxTERM = "";
+var _pxYPV = "";
+var _pxWPAGE = "";
+var _pxLTYPE = "";
+
+var _pxP = _pxy.split("&");
+for (var i = 0; i < _pxP.length; i++) {
+    var _pxA = _pxP[i].split("=");
+    var _pxParamName = _pxA[0].toUpperCase();
+    if (_pxParamName === "CID") {
+        _pxCID = _pxA[1];
+        if (_pxV.length > 0) {
+            _pxV = "CID_" + _pxA[1] + "," + _pxV;
+        } else {
+            _pxV = "CID_" + _pxA[1];
+        }
+    } else if (_pxParamName === "YPID") {
+        _pxYPID = _pxA[1];
+        if (_pxV.length > 0) _pxV = _pxV + ",";
+        _pxV = _pxV + "YPID_" + _pxA[1];
+        _pxO = _pxO + "&ypid=" + _pxA[1];
+    } else if (_pxParamName === "LID") {
+        _pxLID = _pxA[1];
+        if (_pxV.length > 0) _pxV = _pxV + ",";
+        _pxV = _pxV + "LID_" + _pxA[1];
+        _pxO = _pxO + "&lid=" + _pxA[1];
+    } else if (_pxParamName === "H") {
+        _pxH = _pxA[1];
+        _pxO = _pxO + "&lhc=" + _pxA[1];
+    } else if (_pxParamName === "C") {
+        _pxC = _pxA[1];
+    } else if (_pxParamName === "URL") {
+        _pxURL = "/url/" + _pxA[1];
+    } else if (_pxParamName === "TERM") {
+        _pxTERM = _pxA[1];
+    } else if (_pxParamName === "YPV") {
+        _pxYPV = _pxA[1];
+    } else if (_pxParamName === "WPAGE") {
+        _pxWPAGE = _pxA[1];
+    } else if (_pxParamName === "LTYPE") {
+        _pxLTYPE = _pxA[1];
+    }
+
+}
+
+var _pxR = _pxRID();
+var _pxItid = document.location.hostname;
+
+if ((_pxC !== "111") && (_pxC !== "110")) {
+    var _px2 = new Image();
+    _px2.src = "https://c.ypcdn.com/2/i/pixy?ptid=cwsite&auto=vrid&iid=1&t=cwsite&rid=" + _pxR + "&itid=" + _pxItid + "&cid=" + _pxCID + _pxO;
+}
+
+
+function _pxLoadJs(url, callback) {
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+
+    if (script.readyState) {  //IE
+        script.onreadystatechange = function () {
+            if (script.readyState === "loaded" ||
+                script.readyState === "complete") {
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    } else {  //Others
+        script.onload = callback;
+    }
+
+    script.src = url;
+    document.getElementsByTagName("head")[0].appendChild(script);
+}
+
+function _px5(a, opt) {
+    var _px3 = new Image();
+    if (_pxV.length > 0) _pxV = _pxV + ",";
+    _pxV = _pxV + "YPACTN_" + a;
+    _pxURL = "";
+    if (opt.length > 0)
+        _pxURL = "/url/" + opt;
+    _px3.src = "https://d.turn.com/r/dd/id/L21rdC8xOS9jaWQvMTkyMjkxODkvdC8y/cat/" + _pxC + "," + _pxH + "/qry/" + _pxV + _pxURL;
+
+    if ((_pxC !== "111") && (_pxC !== "110")) {
+        var _px6 = new Image();
+        _px6.src = "https://c.ypcdn.com/2/ua/pixy?ptid=cwsite&auto=vrid&iid=1&type=" + a + "&rid=" + _pxR;
+    }
+}

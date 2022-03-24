@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.171);
+
+}
+nav{
+    
+    height: 60px;
+    width: 70%;  margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ani  li{
+margin: 0 20px;
+list-style: none;
+}
+
+.ani ul{
+    display: flex;
+    justify-content: center;
+}
+header .anii li a{
+color: #000;
+text-decoration: none;
+display: flex;
+align-items: center;
+}
+.banner_img{
+    background-image: url("/img/GEADER IMG.jpg");
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.banner{
+    height: 400px;
+    position: relative;
+    border: 1px solid rgb(194, 194, 194);
+}
+.banner img{
+    position:absolute;
+    top: 0;
+    left: 20%;
+}
+.anii .icon-left{
+    margin-right: 5px;
+}
+.anii .icon-right{
+    margin-left: 5px;
+}
+/* section 2 start */
+.section2{
+    height: 400px;
+    display: flex;
+    width: 60%;
+    margin: 50px  auto;
+      
+}
+ .section2 .box-left{
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+    
+}
+.section2 .box-right{
+    height: 100%; 
+    width: 50%; 
+}
+.p1{
+    font-size: 13px;
+    color: rgb(179, 179, 179);
+    letter-spacing: 2px;
+}
+.ah1{
+    font-size: 30px;
+    color: rgb(97, 97, 109);
+    margin: 20px 0px;
+}
+ .aitalic{
+ font-size: 20px; 
+ font-weight: bold;
+ font-style: italic;
+ color: black;       
+}
+.ap3{
+    font-size: 18px;
+}  
+.begin-button .btn{
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: .875rem;
+    background-color: #3cadc9;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 0 10px;
+    padding: 11px 40px;
+    color: #fff; 
+
+}
+/* section 2 end */
+/* section 3 start */
+.section3{
+    background-color: #f0efef;
+    height: 300px;
+    margin: 50px 0;
+
+
+}
+.adiv2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin: 0px auto;
+    align-items: center !important;
+}
+.section3 .box-left{
+    width: 50%;
+    padding: 50px;
+    
+
+}
+.section3 .box-right{
+    width: 50%;
+    display: flex;
+    display: list-item;
+}
+.axx{ 
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(143, 142, 142);
+    margin-bottom: 8px; 
+}  
+.azz{
+    display: inline-block;
+    margin-bottom:8px;
+}  
+.stardiv span{
+    color: rgb(190, 190, 51);
+}
+/* section 3 end */
+/* section 4 star */
+.section4{
+    height:300px ;
+    width: 60%;
+    margin:0px 300px;  
+}
+ .push{
+    display: flex;
+    align-items: center;
+}
+.section4 .box-left{
+    width: 50%;
+}
+.qq{
+    font-size: 30px;
+    color: rgb(63, 51, 51);
+    margin: 10px 0;
+}
+.rr{
+    color: rgb(150, 143, 143);
+    margin: 11px 0;
+}
+.section4 .box-right{
+    width: 50%; 
+}
+.answer{
+    font-size: 22px;
+    background-color: #8ddff1;
+    text-align: center;
+    padding: 15px 60px;
+    margin: 0 80px;
+}
+.section4 .kidding{
+    margin: 10px 0;
+    
+}
+.nn{
+    font-size: 25px;
+}
+.kidding .nn a{
+    padding: 5px 11px;
+    font-size: 20px;
+    border:1px solid #000;
+    text-decoration: none;
+
+}
+.kidding a:hover{
+    background-color:  #067ab4;
+    color: #fff;
+}
+/* section 4 end */
+/* section 5 start */
+.section5{
+    height: 400px;
+    background-color: #f0efef;
+}
+.section5  .photo{
+    height: 400px;
+    width: 60%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+.section5  .photo .box-left{
+    width: 50%;
+    padding: 10px;
+    
+}
+.section5  .photo .box-right{
+    width: 50%;
+    margin: 0px 8px;
+    padding: 10px;    
+}
+.tt{
+    font-size: 31px;
+    margin: 15px 0px;
+}
+.vv{
+    font-size: 15px;
+    margin: 20px 0;
+}
+.butten .jj{
+    padding: 8px 25px;
+    background-color:#3cadc9;
+    text-decoration: none;
+    color: #fff;
+
+}
+.kingkong .jomanjo{
+    display: inline-block;
+    margin: 30px 0;
+    font-size: 17px;
+}
+.kingkong .jomanjo .dd{
+    color:#3cadc9 ;
+    text-decoration: none;
+    font-weight:600 !important; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* section 5 end */
+/* section 6 start */
+.section6{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section6 .enjoy{
+    width: 60%; 
+    padding: 20px;
+    border:2px solid rgba(0, 0, 0, 0.2);
+}
+.enjoy .card{
+    
+   display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.card .img-box{     
+    width: 22%;
+    margin: 10px 10px;
+    border:2px solid rgba(0, 0, 0, 0.2);
+}
+.cc .bank{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.bank .account{
+    font-size: 15px;
+    margin: 0px 10px;
+}
+
+.coupon-value{
+    padding: 20px;
+}
+.content{
+    font-size: 17px;
+}
+.price{
+    color: #067ab4;
+}
+.price-value{
+    text-align: end;
+}
+.line{
+    text-decoration: line-through;
+}
+.big{
+    font-size: 25px;
+    color: forestgreen;
+}
+/* section 6 end */
+/* <!-- footer start --> */
+.footer1{
+    height: 1000px;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;  
+}
+.largest{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.largest .box-left{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    
+}
+.first{
+    height: 100%;
+    width: 50%;
+    margin-right: 8px;
+    
+}
+footer .first .unic{
+    font-size: 20px;
+    padding: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer ul{  
+    list-style: none; 
+
+}
+footer ul li a{
+    color:inherit;
+    text-decoration: none;
+    padding-bottom: 15px;   
+}
+.largest .box-right{
+    height: 100%;
+    width: 60%;
+    display: flex;
+}
+.second{
+    height: 100%;
+    width: 60%;
+    
+}
+.rambo{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .second .area{
+    font-size: 20px;
+    padding: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.second .area .document{
+    font-size: 15px;
+    font-family: none;
+}
+.third{
+    height: 100%;
+    width: 40%;
+    margin-left: 20px;
+    
+}
+footer .third .copy-con{
+    font-size: 20px;
+    padding: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+
+
+
+/* <!-- footer end --> */
